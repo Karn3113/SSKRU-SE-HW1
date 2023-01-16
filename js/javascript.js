@@ -24,6 +24,20 @@ function dbg()
     }
 }
 
+async function requestToServer()
+{
+    // POST
+    let ret = await fetch("post_form.php", {method: 'POST', body: "parameter"});
+    // GET
+    let re2 = await fetch("post_form.php?parameter", {method: 'GET'});
+
+    
+    /*
+    $_GET["param"]
+    $_POST["param"]
+    */
+}
+
 function oneClicked()
 {
     dbg("1 is clicked");
@@ -49,66 +63,93 @@ function oneClicked()
 function twoClicked()
 {
     dbg("2 is clicked");
+
+    currentOutput += "2";
+    document.getElementById("display").value = currentOutput;
 }
 
 function threeClicked()
 {
     dbg("3 is clicked");
+    currentOutput += "3";
+    document.getElementById("display").value = currentOutput;
 }
 
 function fourClicked()
 {
     dbg("4 is clicked");
+    currentOutput += "4";
+    document.getElementById("display").value = currentOutput;
 }
 
 function fiveClicked()
 {
     dbg("5 is clicked");
+    currentOutput += "5";
+    document.getElementById("display").value = currentOutput;
 }
 
 function sixClicked()
 {
     dbg("6 is clicked");
+    currentOutput += "6";
+    document.getElementById("display").value = currentOutput;
 }
 
 function sevenClicked()
 {
     dbg("7 is clicked");
+    currentOutput += "7";
+    document.getElementById("display").value = currentOutput;
 }
 
 function eightClicked()
 {
     dbg("8 is clicked");
+    currentOutput += "8";
+    document.getElementById("display").value = currentOutput;
 }
 
 function nineClicked()
 {
     dbg("9 is clicked");
+    currentOutput += "9";
+    document.getElementById("display").value = currentOutput;
 }
 
 function zeroClicked()
 {
     dbg("0 is clicked");
+    currentOutput += "0";
+    document.getElementById("display").value = currentOutput;
 }
 
 function dotClicked()
 {
     dbg(". is clicked");
+    currentOutput += ".";
+    document.getElementById("display").value = currentOutput;
 }
 
 function plusClicked()
 {
     dbg("+ is clicked");
+    currentOutput += "+";
+    document.getElementById("display").value = currentOutput;
 }
 
 function minusClicked()
 {
     dbg("- is clicked");
+    currentOutput += "-";
+    document.getElementById("display").value = currentOutput;
 }
 
 function multiplyClicked()
 {
     dbg("x is clicked");
+    currentOutput += "*";
+    document.getElementById("display").value = currentOutput;
 
     /* คำแนะนำ
         ตัวคูณในภาษาจาวาสคริปคือ *
@@ -118,6 +159,8 @@ function multiplyClicked()
 function divideClicked()
 {
     dbg("÷ is clicked");
+    currentOutput += "/";
+    document.getElementById("display").value = currentOutput;
 
     /* คำแนะนำ
         ตัวหารในภาษาจาวาสคริปคือ /
@@ -127,6 +170,7 @@ function divideClicked()
 function equalClicked()
 {
     dbg("= is clicked");
+    
 
     /* คำแนะนำ 
         ให้ใช้ฟังก์ชั่น eval ในการคำนวนค่าบวกลบคูณหาร
@@ -134,6 +178,11 @@ function equalClicked()
             หรือ eval(ตัวแปร) ก็ได้เช่นเดียวกัน
         **เมื่อ eval แล้วอย่าลืมอัพเดทค่า currentOutput ด้วย**
     */
+
+    var result = eval(currentOutput);
+    document.getElementById("display").value = result;
+    currentOutput = String(result);
+    dbg(String(result));
 
     // ตัวอย่างการแสดงค่าออกทาง console เพื่อดูค่าของตัวแปร currentOutput
     dbg("ค่าของ currentOutput คือ ", currentOutput);
@@ -155,6 +204,8 @@ function delClicked()
 
         ทดสอบการทำงานของสองฟังก์ชั่นได้ตามต้องการ
     */
+   currentOutput = currentOutput.substring(0, currentOutput.length-1);
+   document.getElementById("display").value = currentOutput;
 }
 
 function clearClicked()
@@ -167,6 +218,9 @@ function clearClicked()
             document.getElementById("ไอดีของ HTML element").value = "ค่าที่ต้องการ";
 
     */ 
+   
+    currentOutput = "";
+    document.getElementById("display").value = "";
 }
 
 
@@ -174,9 +228,15 @@ function clearClicked()
 function poClicked()
 {
     dbg("( is clicked");
+
+    currentOutput += "(";
+    document.getElementById("display").value = currentOutput;
 }
 
 function pcClicked()
 {
     dbg(") is clicked");
+
+    currentOutput += ")";
+    document.getElementById("display").value = currentOutput;
 }
