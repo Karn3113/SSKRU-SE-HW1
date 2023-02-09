@@ -23,7 +23,7 @@ h1{
 
 /* ส่วนตัวเครื่องคิดเลข */
 #calc{
-
+    
 }
 
 /* ส่วนแสดงผลตัวเลข */
@@ -55,30 +55,70 @@ h1{
 }
 
 .bt{
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
 }
 
 #zero{
-    width: 40px;
+    width: 80px;
 }
 
 .bt-num{
+    font-size: 20px;
+    background-color: rgb(121, 121, 121);
+    color:aliceblue 
+}
 
+.bt-num:hover{   
+    transform: translate(0px,-5px);
 }
 
 .bt-ops{
+    font-size: 20px;
+    background-color: rgb(66, 66, 66);
+    color:aliceblue 
+}
 
+.bt-ops:hover{   
+    transform: translate(0px,-5px);
 }
 
 .bt-del{
+    font-size: 20px;
+    background-color: rgb(66, 66, 66);
+    color:aliceblue 
+}
 
+.bt-del:hover{   
+    transform: translate(0px,-5px);
 }
 
 .bt-clear{
-
+    font-size: 20px;
+    background-color: rgb(66, 66, 66);
+    color:aliceblue 
 }
 
-.bt-optional{
+.bt-clear:hover{
+    transform: translate(0px,-5px);
+}
 
+.bt-optional{   
+    font-size: 20px;
+    font-size: 20px;
+    background-color: rgb(66, 66, 66);
+    color:aliceblue 
+}
+
+.bt-optional:hover{   
+    transform: translate(0px,-5px);
+}
+
+.bt-opss{
+    font-size: 20px;
+    background-color: rgb(26, 163, 255);
+}
+
+.bt-opss:hover{   
+    transform: translate(0px,-5px);
 }
