@@ -66,8 +66,23 @@ h1{
 .bt-num{
     font-size: 20px;
     background-color: rgb(121, 121, 121);
-    color:aliceblue 
+    color:rgb(255, 255, 255) 
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
+
+.bt-num:active {
+    background-color: #38322d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 .bt-num:hover{   
     transform: translate(0px,-5px);
@@ -76,8 +91,23 @@ h1{
 .bt-ops{
     font-size: 20px;
     background-color: rgb(66, 66, 66);
-    color:aliceblue 
+    color:aliceblue
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999; 
 }
+
+.bt-ops:active {
+    background-color: #5f5b58;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 .bt-ops:hover{   
     transform: translate(0px,-5px);
@@ -86,8 +116,23 @@ h1{
 .bt-del{
     font-size: 20px;
     background-color: rgb(66, 66, 66);
-    color:aliceblue 
+    color:aliceblue
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999; 
 }
+
+.bt-del:active {
+    background-color: #5f5b58;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 .bt-del:hover{   
     transform: translate(0px,-5px);
@@ -97,7 +142,22 @@ h1{
     font-size: 20px;
     background-color: rgb(66, 66, 66);
     color:aliceblue 
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
+
+.bt-clear:active {
+    background-color: #5f5b58;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 .bt-clear:hover{
     transform: translate(0px,-5px);
@@ -108,7 +168,22 @@ h1{
     font-size: 20px;
     background-color: rgb(66, 66, 66);
     color:aliceblue 
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
+
+.bt-optional:active {
+    background-color: #5f5b58;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 .bt-optional:hover{   
     transform: translate(0px,-5px);
@@ -116,9 +191,32 @@ h1{
 
 .bt-opss{
     font-size: 20px;
-    background-color: rgb(26, 163, 255);
+    background-color: rgb(255, 87, 26);
 }
 
-.bt-opss:hover{   
+/* .bt-opss:hover{   
     transform: translate(0px,-5px);
-}
+} */
+
+.bt-opss {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #f77605;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  
+  
+  .bt-opss:active {
+    background-color: #9f500b;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  
